@@ -466,3 +466,44 @@ li {
   transition: all 0.3s ease-in-out;
   background-color: #777;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.project-h1 {
+  font-size: 5rem;
+}
+
+.project {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.proj {
+  width: 40rem;
+  height: 50rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.proj img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 40rem;
+}
