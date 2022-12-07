@@ -501,6 +501,11 @@ li {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
+.proj:hover {
+  transform: translateY(-5rem);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s ease-in-out;
+}
 .primg {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -513,7 +518,7 @@ li {
   width: 40rem;
 }
 .proj img:hover {
-  transform: scale(1.5);
+  /* transform: scale(1.14); */
   transition: all 0.5s ease-in-out;
   /* background-color: #3acfd5; */
 }
