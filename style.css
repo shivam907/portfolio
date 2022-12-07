@@ -52,11 +52,12 @@ nav a:hover {
 }
 
 .hero-section {
-  height: 80%;
+  height: 100%;
   /* width: 60vw; */
   padding: 0 10rem;
   /* background-color: #888; */
   display: flex;
+  /* gap: 5rem; */
   flex-direction: column;
   justify-content: center;
 }
@@ -126,3 +127,28 @@ nav a:hover {
   background-color: aqua;
   box-shadow: 0 0 100px rgba(0, 255, 255, 0.35);
 }
+
+.Iam {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.Iam p {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.type {
+  font-size: 3rem;
+  color: #e67e22;
+  /* color: #fff; */
+}
+/* @keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
+}
+.typed-cursor {
+  animation: typedjsBlink 0.7s infinite;
+} */
