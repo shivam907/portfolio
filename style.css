@@ -16,7 +16,10 @@
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
   );
+  /* border: 0.5rem solid greenyellow; */
   /* backgr: url("DimwittedSinfulArcticfox-mobile.mp4"); */
+  /* border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%; */
 }
 
 .video {
@@ -126,7 +129,7 @@ nav a:hover {
   height: 40.8vh;
   width: 33vw;
   /* background-color: aqua; */
-  box-shadow: 0 0 100px rgba(0, 255, 255, 0.35);
+  box-shadow: 0 0 10rem rgba(0, 255, 255, 0.35);
 }
 
 .Iam {
@@ -136,11 +139,13 @@ nav a:hover {
 }
 
 .Iam p {
+  margin-top: 1rem;
   font-size: 3rem;
   color: #fff;
 }
 
 #type {
+  /* position: relative; */
   font-size: 3rem;
   color: #e67e22;
   /* color: #fff; */
@@ -153,3 +158,95 @@ nav a:hover {
 .typed-cursor {
   animation: typedjsBlink 0.7s infinite;
 } */
+
+#type::after {
+  /* position: absolute; */
+  /* top: 0; */
+  /* bottom: 20.0rem; */
+  /* padding-bottom: 1000.0rem; */
+  content: "|";
+  font-weight: 900;
+  font-size: 4rem;
+  margin-left: 0.5rem;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.scroll-downs {
+  z-index: 999999999999999;
+  position: absolute;
+  bottom: 5rem;
+  right: 48.5vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3vw;
+  height: 5.9rem;
+}
+.mousey {
+  width: 0.3rem;
+  padding: 1rem 1.5rem;
+  height: 3.5rem;
+  border: 0.2rem solid #fff;
+  border-radius: 2.5rem;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 0.3rem;
+  height: 1rem;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+}
