@@ -7,6 +7,8 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="hero">
@@ -14,7 +16,7 @@
         <source src="video.mp4" type="video/mp4" />
       </video>
       <!-- <h1>Hello</h1> -->
-      <nav>
+      <nav class="navbar">
         <a href="" class="nav-a">Home</a>
         <a href="" class="nav-a">About</a>
         <a href="" class="nav-a">Tech Stack</a>
@@ -40,6 +42,15 @@
         <div class="scroller"></div>
       </div>
     </div>
+    <div class="loading">
+      <!-- <div class="loader"> -->
+      <span class="loader__element"></span>
+      <span class="loader__element"></span>
+      <span class="loader__element"></span>
+      <!-- </div> -->
+    </div>
+
+    <div class="tech"></div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
   </body>

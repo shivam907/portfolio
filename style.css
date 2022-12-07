@@ -4,18 +4,20 @@
   box-sizing: border-box;
   font-family: Helvetica;
   font-size: 62.5%;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .hero {
   height: 100vh;
   width: 100vw;
   display: flex;
+  z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8),
     rgba(0, 0, 0, 0.8)
   );
+  /* background-position: fixed; */
   /* border: 0.5rem solid greenyellow; */
   /* backgr: url("DimwittedSinfulArcticfox-mobile.mp4"); */
   /* border-bottom-left-radius: 30%;
@@ -24,7 +26,7 @@
 
 .video {
   /* height: 100vh; */
-  position: absolute;
+  position: fixed;
   z-index: -5;
   width: 100vw;
   /* background-size: cover; */
@@ -42,6 +44,8 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 4.5rem;
+
+  transition: 0.5s ease-in-out;
 }
 
 nav a {
@@ -118,7 +122,7 @@ nav a:hover {
   right: 0;
   top: 25vh;
   height: 50vh;
-  z-index: 100;
+  z-index: 20;
 }
 
 .whiteshadow {
@@ -249,4 +253,70 @@ nav a:hover {
     transform: translateY(1.5rem);
     opacity: 0;
   }
+}
+
+.tech {
+  height: 100vh;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.282) !important;
+  padding: 1.5rem 6rem;
+  backdrop-filter: blur(10px);
+  z-index: 99999;
+  transition: 0.5s ease-in-out;
+}
+
+.loading {
+  position: absolute;
+  /* z-index: -99; */
+  /* left: 47.5vw; */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  /* border-radius: 50%; */
+  z-index: 999999999999999999999999999999999999999999999999999999999999999;
+  /* top: 47.5vh; */
+}
+
+:root {
+  --main-color: #ecf0f1;
+  --point-color: #fff;
+  --size: 5px;
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size) * 2);
+}
+
+.loader__element:nth-child(1) {
+  animation: preloader 0.6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+  animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+}
+
+@keyframes preloader {
+  100% {
+    transform: scale(2);
+  }
+}
+
+.op {
+  opacity: 0;
 }
