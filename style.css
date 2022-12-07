@@ -554,3 +554,146 @@ ion-icon {
 ion-icon:hover {
   color: #3acfd5;
 }
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+}
+
+.section-cta {
+  margin-top: 80px;
+  padding: 48px 0 128px 0;
+  margin-bottom: 50px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr;
+  /* background-color: #e67e22; */
+  /* box-shadow: 0 24px 48px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.3);
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  /* background-image: linear-gradient(to right, #3acfd5 0%, #87dab7 100%); */
+  /* height: 50rem; */
+  overflow: hidden;
+}
+/* 
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 70, 0.34),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+.cta-text-box {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* gap: 50px; */
+  padding: 48px 64px 64px 64px;
+}
+
+.cta-text {
+  color: rgb(186, 186, 186);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 48px 0;
+}
+.cta .heading-secondary {
+  color: #fff;
+  margin-bottom: 22px;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 23px;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid #fff;
+  /* border-radius: 9px; */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.container-1 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.cont {
+  font-size: 44px;
+}
+.btn-form {
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: #fdf2e9;
+  padding: 1.2rem 9.4rem;
+  align-self: end;
+  justify-self: flex-start;
+}
+
+.btn-form:hover {
+  background-color: #999;
+  color: #000;
+  /* color: #555; */
+}
+
+textarea {
+  padding: 12px;
+  font-size: 18px;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 70px;
+}
