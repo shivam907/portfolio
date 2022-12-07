@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: Helvetica;
   font-size: 62.5%;
+  overflow-y: hidden;
 }
 
 .hero {
@@ -139,7 +140,7 @@ nav a:hover {
   color: #fff;
 }
 
-.type {
+#type {
   font-size: 3rem;
   color: #e67e22;
   /* color: #fff; */

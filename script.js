@@ -1,4 +1,4 @@
-const typed = new Typed(".type", {
+const typed = new Typed("#type", {
   strings: [
     "Software Developer",
     "Frontend Developer",
@@ -9,5 +9,5 @@ const typed = new Typed(".type", {
   typeSpeed: 50,
   backSpeed: 50,
   loop: true,
-  fadeOut: true,
+  //   fadeOut: true,
 });
