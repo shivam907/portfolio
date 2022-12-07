@@ -15,10 +15,16 @@ const typed = new Typed("#type", {
 $(function () {
   $(document).scroll(function () {
     var $nav = $(".navbar");
-    const mouse = document.querySelector(".scroll-downs");
-    mouse.classList.toggle("op");
-    console.log($nav.height(), $(this).scrollTop() > $nav.height() / 3);
+
+    // console.log($nav.height(), $(this).scrollTop() > $nav.height() / 3);
     $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() / 3);
+  });
+});
+$(function () {
+  $(document).scroll(function () {
+    const $mouse = $(".scroll-downs");
+    $mouse.toggleClass("op", $(this).scrollTop() > 20);
+    // console.log("hlo m");
   });
 });
 
