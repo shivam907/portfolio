@@ -501,9 +501,56 @@ li {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
+.primg {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+}
 
 .proj img {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   width: 40rem;
+}
+.proj img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
+  /* background-color: #3acfd5; */
+}
+
+.proj-content {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%;
+  width: 100%; */
+  padding: 1.5rem;
+  gap: 3rem;
+}
+
+.projname {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.projpara {
+  color: #ababab;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+ion-icon {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+ion-icon:hover {
+  color: #3acfd5;
 }
