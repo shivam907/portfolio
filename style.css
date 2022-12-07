@@ -328,3 +328,20 @@ body {
 .op {
   opacity: 0;
 }
+.button {
+  font-size: 1.6rem;
+  color: #48c4f2;
+  padding: 8px 20px;
+  background: transparent;
+  margin-right: 15px;
+  border-image: linear-gradient(to right, #3acfd5 0%, #87dab7 100%);
+  border-image-slice: 1;
+  cursor: pointer;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.button:hover {
+  /* transition: all 0.3s ease-in-out; */
+  background-image: linear-gradient(to right, #3acfd5 0%, #87dab7 100%);
+  color: #fff;
+}
