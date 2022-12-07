@@ -9,6 +9,7 @@
 .hero {
   height: 100vh;
   width: 100vw;
+  display: flex;
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8),
@@ -20,7 +21,7 @@
 .video {
   /* height: 100vh; */
   position: absolute;
-  z-index: -1;
+  z-index: -5;
   width: 100vw;
   /* background-size: cover; */
 }
@@ -105,4 +106,23 @@ nav a:hover {
   100% {
     transform: rotate(0deg);
   }
-} ;
+}
+
+.terminal {
+  position: absolute;
+  right: 0;
+  top: 25vh;
+  height: 50vh;
+  z-index: 100;
+}
+
+.whiteshadow {
+  z-index: 10;
+  position: absolute;
+  right: 4.15vw;
+  top: 29.2vh;
+  height: 40.8vh;
+  width: 33vw;
+  background-color: aqua;
+  box-shadow: 0 0 100px rgba(0, 255, 255, 0.35);
+}
