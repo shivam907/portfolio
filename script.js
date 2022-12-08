@@ -40,6 +40,19 @@ $(function () {
     // console.log("hlo m");
   });
 });
+let i = 0;
+const sc = function () {
+  $(document).scroll(function () {
+    const $tech = $(".tech");
+    // console.log($tech.height());
+    // console.log($(this).scrollTop());
+    if ($(this).scrollTop() > 300 && i == 0) {
+      i += 1;
+      addProgressAnimation();
+    }
+  });
+};
+sc();
 
 function startProgress(maxWidth, elem) {
   // this.setAttribute('disabled', true);
@@ -91,3 +104,14 @@ reactjs.addEventListener("mouseenter", function () {
 flask.addEventListener("mouseenter", function () {
   startProgress(60, document.querySelector(".flask"));
 });
+
+const addProgressAnimation = () => {
+  startProgress(90, document.querySelector(".html"));
+  startProgress(80, document.querySelector(".css"));
+  startProgress(50, document.querySelector(".bootstrap"));
+  startProgress(70, document.querySelector(".js"));
+  startProgress(80, document.querySelector(".nodejs"));
+  startProgress(40, document.querySelector(".mongodb"));
+  startProgress(20, document.querySelector(".reactjs"));
+  startProgress(60, document.querySelector(".flask"));
+};
