@@ -88,9 +88,9 @@ nav a:hover {
   /* background: #f2709c;
   background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
   background: linear-gradient(to right, #ff9472, #f2709c); */
-  background: #24c6dc;
-  background: -webkit-linear-gradient(45deg, #514a9d, #24c6dc);
-  background: linear-gradient(45deg, #514a9d, #24c6dc);
+  /* background: #24c6dc; */
+  background: -webkit-linear-gradient(45deg, #80ff72, #7ee8fa);
+  background: linear-gradient(45deg, #80ff72, #7ee8fa);
   font-family: "Rubik";
   /* margin-bottom: 1rem; */
   font-size: 6rem;
