@@ -422,12 +422,16 @@ li {
   /* display: inline-block; */
   overflow: hidden;
   white-space: nowrap;
+
+  transition: all 0.5s ease-in-out;
 }
 
 .bar {
   color: #fff;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.2);
+
+  transition: all 0.5s ease-in-out;
   border-radius: 8px;
   /* padding: 1rem; */
   height: 4.05rem;
@@ -517,6 +521,7 @@ li {
   backdrop-filter: blur(5px);
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: all 0.5s ease-in-out;
 }
 .proj:hover {
   transform: translateY(-5rem);
