@@ -67,27 +67,27 @@ let mongodb = document.querySelector(".mongodb-bar");
 let reactjs = document.querySelector(".reactjs-bar");
 let flask = document.querySelector(".flask-bar");
 
-html.addEventListener("mouseover", function () {
+html.addEventListener("mouseenter", async function () {
   startProgress(90, document.querySelector(".html"));
 });
-css.addEventListener("mouseover", function () {
+css.addEventListener("mouseenter", function () {
   startProgress(80, document.querySelector(".css"));
 });
-bootstrap.addEventListener("mouseover", function () {
+bootstrap.addEventListener("mouseenter", function () {
   startProgress(50, document.querySelector(".bootstrap"));
 });
-js.addEventListener("mouseover", function () {
+js.addEventListener("mouseenter", function () {
   startProgress(70, document.querySelector(".js"));
 });
-nodejs.addEventListener("mouseover", function () {
+nodejs.addEventListener("mouseenter", function () {
   startProgress(80, document.querySelector(".nodejs"));
 });
-mongodb.addEventListener("mouseover", function () {
+mongodb.addEventListener("mouseenter", function () {
   startProgress(40, document.querySelector(".mongodb"));
 });
-reactjs.addEventListener("mouseover", function () {
+reactjs.addEventListener("mouseenter", function () {
   startProgress(20, document.querySelector(".reactjs"));
 });
-flask.addEventListener("mouseover", function () {
+flask.addEventListener("mouseenter", function () {
   startProgress(60, document.querySelector(".flask"));
 });
