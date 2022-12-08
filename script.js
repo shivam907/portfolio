@@ -40,3 +40,23 @@ $(function () {
     // console.log("hlo m");
   });
 });
+
+let bar = document.querySelector(".bar");
+
+bar.addEventListener("mouseover", startProgress);
+
+function startProgress() {
+  // this.setAttribute('disabled', true);
+  let context = this;
+  let atPercent = 10;
+  let br = document.querySelector(".bar");
+
+  let inter = setInterval(function () {
+    if (atPercent >= 70) {
+      // context.removeAttribute('disabled');
+      clearInterval(inter);
+    }
+    br.style.width = atPercent + "%";
+    atPercent++;
+  }, 20);
+}
