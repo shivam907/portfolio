@@ -49,6 +49,7 @@ const sc = function () {
     if ($(this).scrollTop() > 300 && i == 0) {
       i += 1;
       addProgressAnimation();
+      anim();
     }
   });
 };
@@ -71,39 +72,43 @@ function startProgress(maxWidth, elem) {
 }
 
 // let html = document.querySelector(".bar");
-let html = document.querySelector(".html-bar");
-let css = document.querySelector(".css-bar");
-let bootstrap = document.querySelector(".bootstrap-bar");
-let js = document.querySelector(".js-bar");
-let nodejs = document.querySelector(".nodejs-bar");
-let mongodb = document.querySelector(".mongodb-bar");
-let reactjs = document.querySelector(".reactjs-bar");
-let flask = document.querySelector(".flask-bar");
+const anim = () => {
+  setInterval(() => {
+    let html = document.querySelector(".html-bar");
+    let css = document.querySelector(".css-bar");
+    let bootstrap = document.querySelector(".bootstrap-bar");
+    let js = document.querySelector(".js-bar");
+    let nodejs = document.querySelector(".nodejs-bar");
+    let mongodb = document.querySelector(".mongodb-bar");
+    let reactjs = document.querySelector(".reactjs-bar");
+    let flask = document.querySelector(".flask-bar");
 
-html.addEventListener("mouseenter", async function () {
-  startProgress(90, document.querySelector(".html"));
-});
-css.addEventListener("mouseenter", function () {
-  startProgress(80, document.querySelector(".css"));
-});
-bootstrap.addEventListener("mouseenter", function () {
-  startProgress(50, document.querySelector(".bootstrap"));
-});
-js.addEventListener("mouseenter", function () {
-  startProgress(70, document.querySelector(".js"));
-});
-nodejs.addEventListener("mouseenter", function () {
-  startProgress(80, document.querySelector(".nodejs"));
-});
-mongodb.addEventListener("mouseenter", function () {
-  startProgress(40, document.querySelector(".mongodb"));
-});
-reactjs.addEventListener("mouseenter", function () {
-  startProgress(20, document.querySelector(".reactjs"));
-});
-flask.addEventListener("mouseenter", function () {
-  startProgress(60, document.querySelector(".flask"));
-});
+    html.addEventListener("mouseenter", async function () {
+      startProgress(90, document.querySelector(".html"));
+    });
+    css.addEventListener("mouseenter", function () {
+      startProgress(80, document.querySelector(".css"));
+    });
+    bootstrap.addEventListener("mouseenter", function () {
+      startProgress(50, document.querySelector(".bootstrap"));
+    });
+    js.addEventListener("mouseenter", function () {
+      startProgress(70, document.querySelector(".js"));
+    });
+    nodejs.addEventListener("mouseenter", function () {
+      startProgress(80, document.querySelector(".nodejs"));
+    });
+    mongodb.addEventListener("mouseenter", function () {
+      startProgress(40, document.querySelector(".mongodb"));
+    });
+    reactjs.addEventListener("mouseenter", function () {
+      startProgress(20, document.querySelector(".reactjs"));
+    });
+    flask.addEventListener("mouseenter", function () {
+      startProgress(60, document.querySelector(".flask"));
+    });
+  }, 2000);
+};
 
 const addProgressAnimation = () => {
   startProgress(90, document.querySelector(".html"));
