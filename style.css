@@ -75,6 +75,7 @@ nav a:hover {
 
 .intro {
   display: flex;
+  align-items: flex-end;
   gap: 2rem;
 }
 
@@ -84,22 +85,19 @@ nav a:hover {
 }
 .name {
   /* color: aqua; */
-  background: #f2709c; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff9472,
-    #f2709c
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff9472,
-    #f2709c
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  /* background: #f2709c;
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+  background: linear-gradient(to right, #ff9472, #f2709c); */
+  background: #24c6dc;
+  background: -webkit-linear-gradient(45deg, #514a9d, #24c6dc);
+  background: linear-gradient(45deg, #514a9d, #24c6dc);
+  font-family: "Rubik";
+  /* margin-bottom: 1rem; */
+  font-size: 6rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5rem;
+  /* font-size: 5rem; */
 }
 
 .intro .img {
