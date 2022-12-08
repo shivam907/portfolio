@@ -57,6 +57,7 @@ function startProgress(maxWidth, elem) {
   }, 20);
 }
 
+// let html = document.querySelector(".bar");
 let html = document.querySelector(".html-bar");
 let css = document.querySelector(".css-bar");
 let bootstrap = document.querySelector(".bootstrap-bar");
@@ -66,35 +67,27 @@ let mongodb = document.querySelector(".mongodb-bar");
 let reactjs = document.querySelector(".reactjs-bar");
 let flask = document.querySelector(".flask-bar");
 
-html.addEventListener(
-  "click",
-  startProgress(90, document.querySelector(".html"))
-);
-css.addEventListener(
-  "click",
-  startProgress(80, document.querySelector(".css"))
-);
-bootstrap.addEventListener(
-  "mouseover",
-  startProgress(50, document.querySelector(".bootstrap"))
-);
-js.addEventListener(
-  "mouseover",
-  startProgress(70, document.querySelector(".js"))
-);
-nodejs.addEventListener(
-  "mouseover",
-  startProgress(80, document.querySelector(".nodejs"))
-);
-mongodb.addEventListener(
-  "mouseover",
-  startProgress(40, document.querySelector(".mongodb"))
-);
-reactjs.addEventListener(
-  "mouseover",
-  startProgress(20, document.querySelector(".reactjs"))
-);
-flask.addEventListener(
-  "mouseover",
-  startProgress(60, document.querySelector(".flask"))
-);
+html.addEventListener("mouseover", function () {
+  startProgress(90, document.querySelector(".html"));
+});
+css.addEventListener("mouseover", function () {
+  startProgress(80, document.querySelector(".css"));
+});
+bootstrap.addEventListener("mouseover", function () {
+  startProgress(50, document.querySelector(".bootstrap"));
+});
+js.addEventListener("mouseover", function () {
+  startProgress(70, document.querySelector(".js"));
+});
+nodejs.addEventListener("mouseover", function () {
+  startProgress(80, document.querySelector(".nodejs"));
+});
+mongodb.addEventListener("mouseover", function () {
+  startProgress(40, document.querySelector(".mongodb"));
+});
+reactjs.addEventListener("mouseover", function () {
+  startProgress(20, document.querySelector(".reactjs"));
+});
+flask.addEventListener("mouseover", function () {
+  startProgress(60, document.querySelector(".flask"));
+});
